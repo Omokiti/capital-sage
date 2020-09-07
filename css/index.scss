@@ -1,0 +1,289 @@
+*{
+box-sizing: border-box;
+}
+html,body{
+font-family:'Montserrat', sans-serif;
+width:100%;
+}
+$primarycolor:#48286b;
+$navbtncolor:#7d4b8a;
+$seccolor:#f4f4f4;
+$seccolor2:#252525;
+nav{
+background-color:$primarycolor;
+}
+.nav-link,.navbar-brand{
+color:$seccolor;
+margin:0.3125rem 0.3125rem;
+}
+.navbar-toggler{
+border-color:$seccolor2; 
+}
+.navbar-toggler-icon { 
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+.nav-link:hover{
+color:$navbtncolor;
+}
+.navbutton{
+background:$navbtncolor;
+color:$seccolor;
+border:none;
+border-radius:0.3125;
+
+}
+.bg-button{
+background:$navbtncolor;
+width:9.375rem;
+height:2.5rem;
+color:$seccolor;
+border:none;
+
+}
+@media only screen and (max-width:420px){
+   .bg-button{
+    margin-top:10px;
+   } 
+        
+        }
+#brand{
+color:#7d4b8a;
+}
+#links{
+text-align:center;
+}
+.carousel-item{
+background-image: url('../images/background image.png');   
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+position: relative; 
+height:31.25rem;
+}
+
+.wrapper {
+position:absolute;
+top: 0%;
+left:0%;
+color:$seccolor2;
+background: rgba(220,150,186,0.2);
+width:100%;
+height:100%;
+z-index:2;
+backdrop-filter:blur(0.3px);
+-webkit-backdrop-filter:blur(0.3px) ; 
+ }
+ .bolds{
+ font-weight:800;
+ font-size: 3rem;
+ color:$seccolor;
+ } 
+ .buttons{
+ background:#7d4b8a;
+ }
+.content{
+position:absolute;
+top: 45%;
+left: 45%;
+transform: translate(-50%, -50%);
+color:$seccolor;
+text-align: justify;
+@media only screen and (max-width:420px){
+top:49%;
+left:45%;
+font-size:14px;
+}
+}
+#underline{
+border-bottom: solid thick $navbtncolor;
+color:$primarycolor;  
+margin-left:5%;  
+}
+.content p{
+line-height:25px;
+
+}
+
+.bold{
+color:$primarycolor;
+font-weight:900;
+
+}
+#bolder{
+color:$seccolor;    
+@extend .bold;
+}
+#color{
+@extend .bold;
+}
+.carousel-control-prev,.carousel-control-next{
+z-index:100;
+}
+
+.imgs{
+background-image:url("../images/img.png");
+background-position:center;
+background-repeat:no-repeat;
+ background-size:cover;
+ position: relative;
+height:auto;
+}
+#whatwedo{
+margin:1.25rem 1.25rem;
+line-height:1.25rem;
+}
+.offer{
+background:$primarycolor;
+color:$seccolor;
+}
+.card {
+background:#513272;
+border-radius:0.3125;
+}
+.card-text{
+line-height:1rem;
+font-size:0.9375rem ;
+}   
+#icons{
+width:1.875rem;
+height:1.875rem;
+margin: 1.25rem 5rem;
+color:$seccolor;
+}
+.button{
+background:$primarycolor;    
+width:10.625rem;
+height:2.8125rem;
+color:#fedae8;
+border:2px solid $seccolor;
+}
+
+.blurimg{
+@extend .bg-img;
+background-image:url("../images/blured.png");
+height:31.25rem;
+position: relative;
+}
+#imgss{
+position:absolute;
+top:3%;
+left:50%; 
+z-index: 2;   
+}
+.contents{
+position:absolute;
+width:18.75rem;
+height:15.625rem;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.wrap{
+position:absolute;
+top: 60%;
+left:50%;
+color:$primarycolor;
+background: rgba(72, 40,107,0.05); 
+width:80%; 
+height:21.875rem;
+padding:1.5625rem;
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+transform: translate(-50%, -50%); 
+}
+#colors{
+@extend #color;
+text-align:center;
+}
+.news{
+background:$primarycolor;
+color:$seccolor;
+}
+.kolomoni{
+ @extend .news; 
+background-color:#252525;
+}
+#download{
+background:#336699;
+border-radius:0.625rem;
+width:9.375rem;
+height:3.125rem;
+color:$seccolor;
+}
+.requestform{
+margin:1.25rem 1.25rem; 
+background: $seccolor;
+}
+.requestform input,textarea{
+width:100%;
+height:3.125rem;
+border-radius:0.3125rem;
+background:rgba(196,196,196,0.17);
+}
+.imgss{
+@extend .bg-img;
+background-image:url("../images/customer care.png");
+height:25rem;
+}
+.testimonials{
+background-color:$primarycolor;
+color:$seccolor;
+text-align: center;
+}
+.customer{
+background-color:#4c2e6d;
+border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+width:15.625rem;
+height:5rem;
+ }
+
+ #customer{
+position:absolute;
+left:15px;
+}
+ .profile{
+background-color: rgba(139, 139, 139, 0.11);
+border-radius:0.625rem;
+width:15.625rem;
+height:18.75rem;
+padding:0.3125rem;
+line-height:1.375rem;
+}
+footer{
+background: #000000;
+color:$seccolor;
+position: relative; 
+}
+
+li{
+list-style:none;
+}
+.bckg{
+background:#252525;
+height:2.5rem;
+}
+.lines{
+border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.contain{
+display: flex; 
+a{
+color:$seccolor;
+text-decoration:none;
+}
+
+}    
+.box2{
+flex:1;
+text-align:left;
+}
+.box3{
+ text-align:left;   
+}
+.buttons{
+background:#7d4b8a;
+color:#f4f4f4;
+width:6.28rem;
+    }
+    
