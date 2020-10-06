@@ -236,10 +236,15 @@ border-radius: 0.3125rem 0.3125rem 0rem 0rem;
 width:15.625rem;
 height:5rem;
  }
-
+ 
  #customer{
 position:absolute;
 left:15px;
+}
+.name{
+font-size:0.872rem;
+text-align: justify;
+margin:8px;
 }
  .profile{
 background-color: rgba(139, 139, 139, 0.11);
