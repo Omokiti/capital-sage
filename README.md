@@ -1,2 +1,2 @@
 # capital-sage
-A landing page
+A Fin-tech website 
